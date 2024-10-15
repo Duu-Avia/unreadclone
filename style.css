@@ -1,3 +1,37 @@
-.Lorem {
-    color: aqua;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header .header-logo {
+  width: 134px;
+  height: 18px;
+}
+
+.header .divider {
+  border-left: 1px solid rgb(225, 225, 225);
+  height: 18px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)),
+    url("https://unread.today/files/48/c8f20883c72cb7cf6c5e10f9313f8c87.jpg");
+  height: 100vh;
+  background-size: 100%;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+  padding-top: 121px;
+}
+
+.hero-content .content-left {
+  background-image: url("https://unread.today/files/48/1fade908a2f0a4b525fe83b32a599dc9.png");
+  height: 446.4px;
+  width: 446.4px;
+  background-position: center;
+  background-size: cover;
 }
