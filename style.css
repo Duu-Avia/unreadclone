@@ -1,13 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Inter;
 }
 
 .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding-top: 24px;
-  margin-left: 353px;
+  width: 1425px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-div-search {
@@ -28,9 +31,59 @@
   margin-left: 29.55px;
 }
 
+.search {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.search input {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.search input:focus {
+  outline: none;
+  border: none;
+}
+.search-icon {
+  color: gray;
+  margin-right: 10px;
+}
+
 .social-icons a {
   opacity: 30%;
   margin-left: 11.17px;
+}
+
+.header-container-right {
+  margin-left: 242px;
+}
+
+.header-container-right .daraagiin-niitlel {
+  font-size: 11.6px;
+  color: rgb(120, 120, 120);
+}
+
+.header-container-right .techworm {
+  color: white;
+  font-size: 12px;
+  font-weight: 400px;
+}
+
+.chip {
+  color: #ffff;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-left: 12.64px;
+  padding: 13px 29.2px;
+  border-radius: 30px;
+  font-size: 11.8px;
+  box-shadow: 7px 4px 50px -4px rgba(209, 209, 209, 0.6);
+}
+
+.chip:hover {
+  cursor: pointer;
 }
 
 .hero {
@@ -38,6 +91,8 @@
     url("https://unread.today/files/48/c8f20883c72cb7cf6c5e10f9313f8c87.jpg");
   height: 100vh;
   background-size: 100%;
+  background-position-y: 120%;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -53,6 +108,78 @@
   height: 446.4px;
   width: 446.4px;
   background-position: center;
-  background-size: cover;
   border-radius: 20px;
+  background-size: 100%;
+}
+
+.hero-content-left:hover {
+  background-size: 120%;
+  transition: 0.5s;
+}
+
+.hero-content-right {
+  color: #ffff;
+  font-size: 35px;
+}
+
+.hero-content-right h1 {
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+
+.author-photo {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 3px;
+}
+.author-content {
+  display: flex;
+  font-size: 11.8px;
+  margin-top: 54px;
+}
+.author-name {
+  font-size: 12px;
+  font-weight: 700;
+  opacity: 0.5;
+}
+.author-text {
+  margin-left: 7px;
+  margin-top: 7px;
+}
+
+.listed-images-background {
+  background-color: black;
+  height: 327px;
+  color: #ffff;
+}
+.listed-image-foreign {
+  background-image: url("https://unread.today/files/dca82359-3f6e-4c03-99ef-ef493c68a7aa/fdb77197acfadde2f4e55871d72635f9_square.jpg");
+  width: 244px;
+  height: 360.36px;
+}
+
+.listed-image-alphabet {
+  background-image: url("https://unread.today/files/fb0f77dd-ca16-4803-8f17-83cccdc85cb1/4d22907ce24bb003211938e803c94e75_square.jpg");
+  width: 244px;
+  height: 360.36px;
+}
+
+.listed-image-tech {
+  background-image: url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/c32087273f9380ea1e5d1b6fcbabb98a_square.jpg");
+  width: 244px;
+  height: 360.36px;
+}
+
+.listed-image-newspaper {
+  background-image: url("https://unread.today/files/ab36d712-71ff-4ad9-896e-6ebb29ee892b/25ff02cc9e29ceec81d0895c1e680a05_square.jpg");
+  width: 244px;
+  height: 360.36px;
+}
+
+.listed-image-ios {
+  background-image: url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/2a7768a3887baa7c457da0c416e055b3_square.jpg");
+  width: 244px;
+  height: 360.36px;
 }
