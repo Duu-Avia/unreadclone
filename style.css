@@ -153,33 +153,124 @@
   background-color: black;
   height: 327px;
   color: #ffff;
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  margin-bottom: 209px;
 }
+
+.image-title {
+  color: #ffff;
+  font-weight: 500;
+  margin-top: 250px;
+  margin-left: 300px;
+}
+
 .listed-image-foreign {
-  background-image: url("https://unread.today/files/dca82359-3f6e-4c03-99ef-ef493c68a7aa/fdb77197acfadde2f4e55871d72635f9_square.jpg");
-  width: 244px;
-  height: 360.36px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
+    url("https://unread.today/files/dca82359-3f6e-4c03-99ef-ef493c68a7aa/fdb77197acfadde2f4e55871d72635f9_square.jpg");
+  width: 293.79px;
+  height: 433.91px;
+  background-position: center;
+  border-radius: 9px;
+}
+
+.listed-image-foreign:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .listed-image-alphabet {
-  background-image: url("https://unread.today/files/fb0f77dd-ca16-4803-8f17-83cccdc85cb1/4d22907ce24bb003211938e803c94e75_square.jpg");
-  width: 244px;
-  height: 360.36px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
+    url("https://unread.today/files/fb0f77dd-ca16-4803-8f17-83cccdc85cb1/4d22907ce24bb003211938e803c94e75_square.jpg");
+  width: 293.79px;
+  height: 433.91px;
+  background-position: center;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.listed-image-alphabet:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .listed-image-tech {
-  background-image: url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/c32087273f9380ea1e5d1b6fcbabb98a_square.jpg");
-  width: 244px;
-  height: 360.36px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
+    url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/c32087273f9380ea1e5d1b6fcbabb98a_square.jpg");
+  width: 293.79px;
+  height: 433.91px;
+  background-position: center;
+  border-radius: 9px;
+}
+
+.listed-image-tech:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .listed-image-newspaper {
-  background-image: url("https://unread.today/files/ab36d712-71ff-4ad9-896e-6ebb29ee892b/25ff02cc9e29ceec81d0895c1e680a05_square.jpg");
-  width: 244px;
-  height: 360.36px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
+    url("https://unread.today/files/ab36d712-71ff-4ad9-896e-6ebb29ee892b/25ff02cc9e29ceec81d0895c1e680a05_square.jpg");
+  width: 293.79px;
+  height: 433.91px;
+  background-position: center;
+  border-radius: 9px;
+}
+
+.listed-image-newspaper:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
 }
 
 .listed-image-ios {
-  background-image: url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/2a7768a3887baa7c457da0c416e055b3_square.jpg");
-  width: 244px;
-  height: 360.36px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
+    url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/2a7768a3887baa7c457da0c416e055b3_square.jpg");
+  width: 293.79px;
+  height: 433.91px;
+  background-position: center;
+  border-radius: 9px;
+}
+
+.listed-image-ios:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.listed-image-text {
+  margin-top: 300px;
+  font-weight: bold;
+  margin-left: 20px;
+  position: relative;
+}
+
+.blue-button {
+  background-color: #0078f6;
+  top: 100px;
+  position: absolute;
+  font-size: 10px;
+  font-weight: 500;
+  padding: 6px 11px;
+  border-radius: 20px;
+}
+
+.content {
+  width: 1116px;
+  height: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.content-container {
+  width: 739px;
+  height: 183px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
 }
