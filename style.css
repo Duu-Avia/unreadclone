@@ -456,3 +456,26 @@ article {
   color: #3399ff;
   font-weight: 600;
 }
+
+.grid-box-first img {
+  width: 100%;
+  height: 100%;
+}
+.grid-box-first {
+  display: grid;
+
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+
+.grid-box-first .books {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.grid-box-first .cooperate {
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.grid-box-first .team {
+}
