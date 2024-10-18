@@ -457,25 +457,38 @@ article {
   font-weight: 600;
 }
 
-.grid-box-first img {
-  width: 100%;
-  height: 100%;
-}
 .grid-box-first {
   display: grid;
-
-  grid-template-columns: auto auto auto auto auto auto;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 19px;
+  margin-top: 56px;
+}
+.top-left {
+  display: grid;
+  grid-template-columns: 264.75px 264.75px;
+  gap: 19px;
 }
 
-.grid-box-first .books {
-  grid-column-start: 1;
-  grid-column-end: 3;
-}
-.grid-box-first .cooperate {
-  grid-row-start: 3;
-  grid-row-end: 5;
+.team {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
-.grid-box-first .team {
+.internship {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
 }
+
+.top-right {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 19px;
+}
+
+.grid-box-second {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 34.99px;
+  gap: 19px;
+}
+/* article finished here <---------- */
