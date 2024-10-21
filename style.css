@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: Inter;
+  font-family: SF display, sans-serif;
 }
 
 .header {
@@ -112,6 +112,7 @@
   border-radius: 20px;
   background-size: 180%;
   background-repeat: no-repeat;
+  transition: 0.5s;
 }
 
 .hero-content-left:hover {
@@ -175,6 +176,7 @@
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
+  transition: 0.3s;
 }
 
 .listed-image-foreign:hover {
@@ -191,6 +193,7 @@
   background-position: center;
   border-radius: 9px;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .listed-image-alphabet:hover {
@@ -206,6 +209,7 @@
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
+  transition: 0.3s;
 }
 
 .listed-image-tech:hover {
@@ -221,6 +225,7 @@
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
+  transition: 0.3s;
 }
 
 .listed-image-newspaper:hover {
@@ -236,6 +241,7 @@
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
+  transition: 0.3s;
 }
 
 .listed-image-ios:hover {
@@ -275,11 +281,24 @@
   height: 183px;
   display: flex;
   justify-content: space-around;
-
   background-color: #ffff;
   border-radius: 27px;
-
   box-shadow: 0px 0px 50px 4px rgba(209, 209, 209, 0.3);
+  transition: 0.2s;
+}
+
+.content-container-for-hover {
+  width: 739px;
+  transition: 0.2s;
+}
+
+.content-container-for-hover:hover {
+  transform: translateY(-8px);
+}
+
+.content-container-for-hover:hover .content-container {
+  transition: 0.2s;
+  box-shadow: 0px 20px 50px 4px rgba(68, 65, 65, 0.3);
 }
 
 .author-content-name {
@@ -290,7 +309,19 @@
 
 .content-container-text {
   margin-top: 32px;
-  margin-left: -210px;
+  margin-left: -70px;
+  width: 429px;
+}
+
+.content-main-text {
+  font-size: 21.1px;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.content-main-text:hover {
+  transition: 0.2s;
+  color: #3399ff;
 }
 
 .content-container-box-two {
@@ -307,6 +338,7 @@
   margin-top: 54px;
   flex-direction: row-reverse;
 }
+
 .author-of-content-two .author-content-name {
   text-align: end;
 }
@@ -323,7 +355,7 @@
 }
 
 .dot {
-  margin-left: -80px;
+  margin-left: 5px;
   margin-top: 30px;
 }
 .dot-title {
@@ -463,6 +495,18 @@ article {
   gap: 19px;
   margin-top: 56px;
 }
+
+.grid-box-first img:hover {
+  transition: 0.4s;
+  transform: translateY(-8px);
+  box-shadow: 0px 0px 50px 10px rgba(20, 19, 19, 0.3);
+  border-radius: 5%;
+}
+
+.grid-box-first img {
+  transition: 0.4s;
+}
+
 .top-left {
   display: grid;
   grid-template-columns: 264.75px 264.75px;
@@ -492,11 +536,22 @@ article {
   gap: 19px;
 }
 
+.grid-box-second img {
+  transition: 0.4s;
+}
+
+.grid-box-second img:hover {
+  transition: 0.4s;
+  transform: translateY(-8px);
+  box-shadow: 0px 0px 50px 10px rgba(20, 19, 19, 0.3);
+  border-radius: 5%;
+}
+
 /* article finished here <---------- */
 .footer {
   background-color: black;
   color: #ffff;
-  height: 750px;
+  height: 800px;
 }
 .footer-top {
   height: 82px;
@@ -531,6 +586,14 @@ article {
   border-radius: 18px;
   transition: 0.4s;
 }
+
+.big-button1:hover .active-button {
+  border: 9px solid #16304f;
+  background-color: #3399ff;
+  transition: 0.4s;
+  transform: translate(8px);
+}
+
 .big-button1:hover {
   transition: 0.4s;
   transform: translate(8px);
@@ -570,12 +633,6 @@ article {
   position: absolute;
   right: 30px;
 }
-.active-button:hover {
-  border: 9px solid #16304f;
-  background-color: #3399ff;
-  transition: 0.4s;
-  transform: translate(8px);
-}
 
 .big-button2 {
   background-image: url(pictures/btn-black.png);
@@ -595,7 +652,12 @@ article {
   transition: 0.4s;
   transform: translate(8px);
 }
-
+.big-button2:hover .active-button {
+  border: 9px solid #16304f;
+  background-color: #3399ff;
+  transition: 0.4s;
+  transform: translate(8px);
+}
 .store-button {
   display: flex;
   margin-top: 56px;
@@ -650,4 +712,52 @@ article {
   opacity: 0.5;
   font-size: 11.6px;
   margin-top: 15px;
+}
+
+.social-bar {
+  width: 1116px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  margin-left: 500px;
+}
+
+.social-bar svg {
+  height: 32px;
+  fill: white;
+  opacity: 0.2;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.footer-facebook:hover {
+  fill: #475993;
+  opacity: 1;
+}
+
+.footer-twitter:hover {
+  fill: #1da2f2;
+  opacity: 1;
+}
+
+.footer-instagram:hover {
+  fill: url(#linear-gradient);
+  opacity: 1;
+}
+
+.footer-linkedin:hover {
+  fill: #0077b5;
+  opacity: 1;
+}
+
+.footer-youtube:hover {
+  fill: #ff2500;
+  opacity: 1;
+}
+
+.footer-soundcloud:hover {
+  fill: #f50;
+  opacity: 1;
 }
