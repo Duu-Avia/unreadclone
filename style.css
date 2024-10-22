@@ -130,6 +130,27 @@
   color: transparent;
 }
 
+.hero-content-right .blink {
+  font-size: 14.1px;
+  color: #0078f6;
+  font-weight: 700;
+  animation-name: blinker;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .author-photo {
   width: 36px;
   height: 36px;
@@ -156,10 +177,19 @@
   background-color: black;
   height: 327px;
   color: #ffff;
+  position: relative;
+}
+.scroll-container {
   display: flex;
-  justify-content: center;
-  gap: 28px;
-  margin-bottom: 209px;
+  max-width: 60%;
+  gap: 20px;
+  overflow-x: scroll;
+  height: 500px;
+  margin: 0 auto;
+  padding: 30px;
+}
+.scroll-container::-webkit-scrollbar {
+  display: none;
 }
 
 .image-title {
@@ -172,7 +202,7 @@
 .listed-image-foreign {
   background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
     url("https://unread.today/files/dca82359-3f6e-4c03-99ef-ef493c68a7aa/fdb77197acfadde2f4e55871d72635f9_square.jpg");
-  width: 293.79px;
+  min-width: 293.79px;
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
@@ -188,7 +218,7 @@
 .listed-image-alphabet {
   background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
     url("https://unread.today/files/fb0f77dd-ca16-4803-8f17-83cccdc85cb1/4d22907ce24bb003211938e803c94e75_square.jpg");
-  width: 293.79px;
+  min-width: 293.79px;
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
@@ -205,7 +235,7 @@
 .listed-image-tech {
   background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
     url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/c32087273f9380ea1e5d1b6fcbabb98a_square.jpg");
-  width: 293.79px;
+  min-width: 293.79px;
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
@@ -221,7 +251,7 @@
 .listed-image-newspaper {
   background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
     url("https://unread.today/files/ab36d712-71ff-4ad9-896e-6ebb29ee892b/25ff02cc9e29ceec81d0895c1e680a05_square.jpg");
-  width: 293.79px;
+  min-width: 293.79px;
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
@@ -237,7 +267,7 @@
 .listed-image-ios {
   background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgb(0, 0, 0)),
     url("https://unread.today/files/007afc64-288a-4208-b9d7-3eda84011c1d/2a7768a3887baa7c457da0c416e055b3_square.jpg");
-  width: 293.79px;
+  min-width: 293.79px;
   height: 433.91px;
   background-position: center;
   border-radius: 9px;
@@ -274,6 +304,7 @@
   margin-right: auto;
   display: flex;
   flex-direction: column;
+  padding-top: 200px;
 }
 
 .content-container {
@@ -693,6 +724,13 @@ article {
   margin-top: 46px;
 }
 
+.listed-texts a:hover {
+  font-style: bold;
+  transform: translateX(8px);
+  transition: 0.2s;
+  opacity: 1;
+}
+
 .listed-texts .first {
   width: 208.33px;
   height: 264px;
@@ -705,6 +743,17 @@ article {
   font-weight: 700;
 }
 .first a {
+  text-decoration: none;
+  columns: 50x;
+  display: block;
+  color: white;
+  opacity: 0.5;
+  font-size: 11.6px;
+  margin-top: 15px;
+  transition: 0.2s;
+}
+
+.third span {
   text-decoration: none;
   columns: 50x;
   display: block;
