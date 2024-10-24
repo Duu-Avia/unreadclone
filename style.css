@@ -13,23 +13,11 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 1432px) {
-  .header {
-    width: 100%;
-  }
-}
-
 .img-div-search {
   display: flex;
 }
 .img-div-search img {
   margin-left: -85px;
-}
-
-@media screen and (max-width: 768) {
-  .img-div-search {
-    display: none;
-  }
 }
 
 .header-logo {
@@ -79,24 +67,6 @@
   margin-left: 242px;
 }
 
-@media screen and (max-width: 1432px) {
-  .header-container-right {
-    padding: 0px;
-  }
-}
-
-@media screen and (max-width: 1432px) {
-  .header-container-right {
-    margin-left: 0px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .header-container-right {
-    display: none;
-  }
-}
-
 .header-container-right .daraagiin-niitlel {
   font-size: 11.6px;
   color: rgb(120, 120, 120);
@@ -131,11 +101,11 @@
 .hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgb(0, 0, 0)),
     url("https://unread.today/files/48/c8f20883c72cb7cf6c5e10f9313f8c87.jpg");
-  height: 100vh;
-  max-height: 1000px;
-  background-size: 100%;
-  background-position-y: 120%;
+
+  background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
+  height: 95vh;
 }
 
 .hero-content {
@@ -229,7 +199,7 @@
 }
 .scroll-container {
   display: flex;
-  max-width: 60%;
+  max-width: 80%;
   gap: 20px;
   overflow-x: scroll;
   height: 500px;
@@ -472,14 +442,14 @@
 
 /* started article from here <------------------ */
 article {
-  width: 50%;
-
+  width: 60%;
+  max-width: 1116px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .article-date-container {
-  width: 60%;
+  width: 101%;
   height: 61px;
   display: flex;
   margin-left: auto;
@@ -487,7 +457,7 @@ article {
 }
 
 .article-date-box-first {
-  width: 279px;
+  width: 40%;
   height: 62px;
   border-bottom: 2px solid #3399ff;
   display: flex;
@@ -499,7 +469,7 @@ article {
 }
 
 .article-date-box-second {
-  width: 279px;
+  width: 40%;
   height: 62px;
   border-bottom: 2px solid #e6e6e6;
   display: flex;
@@ -512,7 +482,7 @@ article {
 }
 
 .article-date-box-third {
-  width: 279px;
+  width: 40%;
   height: 62px;
   border-bottom: 2px solid #e6e6e6;
   display: flex;
@@ -525,12 +495,15 @@ article {
 }
 
 .article-date-box-fourth {
-  width: 279px;
+  width: 40%;
   height: 62px;
   border-bottom: 2px solid #e6e6e6;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  color: #888888;
+  font-size: 12.6px;
+  font-weight: 400;
 }
 
 .article-date-box-fourth:hover {
@@ -555,13 +528,6 @@ article {
   font-weight: 600;
 }
 
-.article-date-box-fourth {
-  color: #888888;
-  font-size: 12.6px;
-  font-weight: 400;
-  padding-left: 60px;
-}
-
 .title-fourth {
   padding-left: 180px;
   padding-top: 30px;
@@ -581,12 +547,6 @@ article {
   grid-template-columns: 1fr 1fr;
   gap: 19px;
   margin-top: 56px;
-}
-
-@media screen and (max-width: 1469px) {
-  .grid-box-first {
-    grid-template-columns: 1fr;
-  }
 }
 
 .grid-box-first img:hover {
@@ -850,15 +810,6 @@ article {
   margin-top: 30px;
 }
 
-@media screen and (max-width: 1470px) {
-  .social-bar svg {
-    width: 2vw;
-  }
-  .social-bar {
-    padding: 0;
-  }
-}
-
 .social-bar svg {
   height: 32px;
   fill: white;
@@ -899,6 +850,45 @@ article {
   color: #0077b5;
 }
 
+@media screen and (max-width: 768) {
+  .img-div-search {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1470px) {
+  .social-bar svg {
+    width: 2vw;
+  }
+  .social-bar {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .header {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .header-container-right {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1432px) {
+  .header-container-right {
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container-right {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 990px) {
   .listed-texts {
     display: grid;
@@ -919,5 +909,23 @@ article {
   .listed-texts .third {
     width: 200%;
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .listed-texts .third {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1469px) {
+  .grid-box-first {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .first a {
+    margin: 0;
   }
 }
